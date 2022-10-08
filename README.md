@@ -7,13 +7,15 @@
 	gobuster -u http://fakebank.com -w wordlist.txt dir 
 	
 # ClickJacking
+	https://numberless-holddown.000webhostapp.com/clickjacking.php?url={url with https or http}
+	or
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
 	  <meta charset="UTF-8">
 	</head>
 	<body>
-	  <iframe src="https://10x.redoxengine.com/#/organization/8168/development/developer/apiKeys/dd364dd9-7bc3-4e78-aeea-cd400e1ff721/settings" frameborder="0"></iframe>
+	  <iframe src="{url}" frameborder="0"></iframe>
 	</body>
 	</html>
 
