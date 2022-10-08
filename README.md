@@ -7,17 +7,18 @@
 	gobuster -u http://fakebank.com -w wordlist.txt dir 
 	
 # ClickJacking
-https://numberless-holddown.000webhostapp.com/clickjacking.php?url={url with https or http}
-	or
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	</head>
-	<body>
-	  <iframe src="{url}" frameborder="0"></iframe>
-	</body>
-	</html>
+https://numberless-holddown.000webhostapp.com/clickjacking.php?url={url}
+or
+		
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <meta charset="UTF-8">
+		</head>
+		<body>
+		  <iframe src="{url}" frameborder="0"></iframe>
+		</body>
+		</html>
 
 # CSRF
 ## CSRF parameter is not available
