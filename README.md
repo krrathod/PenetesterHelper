@@ -31,6 +31,27 @@ or
 ## via dangling markup
 	Try "Host: domain.com" to "Host: domain.com:attacker.com"
 	https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning/lab-host-header-password-reset-poisoning-via-dangling-markup
+	
+# RCE
+## Basic
+	Upload Php File
+	
+## via Content-Type restriction bypass
+	Change "Content-Type" header
+	https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-content-type-restriction-bypass
+	
+## via path traversal
+	Change file name "test.php" to "..%2ftest.php"
+	https://www.youtube.com/watch?v=4R3PUhiFzS4
+	
+## via obfuscated file extension
+	change file name filename="exploit.php%00.jpg"
+	https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-obfuscated-file-extension
+	
+## via race condition
+	https://www.youtube.com/watch?v=mt0BN5pYHXI
+	https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-race-condition
+	
 # CSRF
 ## CSRF parameter is not available
 	---> generate CSRF POC and try
