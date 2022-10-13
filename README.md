@@ -20,6 +20,17 @@ or
 		</body>
 		</html>
 
+# Host Header Poisoning
+## Basic
+	Change "Host" header 
+
+## via middleware
+	Add X-Forwarded-Host: <domain.com>
+	https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-poisoning-via-middleware
+	
+## via dangling markup
+	Try "Host: domain.com" to "Host: domain.com:attacker.com"
+	https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning/lab-host-header-password-reset-poisoning-via-dangling-markup
 # CSRF
 ## CSRF parameter is not available
 	---> generate CSRF POC and try
