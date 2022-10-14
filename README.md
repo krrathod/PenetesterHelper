@@ -4,7 +4,11 @@
 	Confidentility : Data access by auth.
   
 # Containt Discover
+	dirb https://beta.alliedboston.com/ /usr/share/wordlists/dirb/big.txt
 	gobuster -u http://fakebank.com -w wordlist.txt dir 
+		
+# directory Traversal
+	dirb domain.com /usr/share/wordlists/wfuzz/vulns/dirTraversal-nix.txt
 	
 # ClickJacking
 https://numberless-holddown.000webhostapp.com/clickjacking.php?url={url}
