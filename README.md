@@ -52,6 +52,13 @@ or
 	https://www.youtube.com/watch?v=mt0BN5pYHXI
 	https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-race-condition
 	
+# No Rate Limit
+## via brute force
+	send request to intruder
+## via Race Condition
+	Send request to turbo
+	add "race.py" payload
+	add "test: %s" header in header
 # CSRF
 ## CSRF parameter is not available
 	---> generate CSRF POC and try
