@@ -28,13 +28,18 @@ or
 ## Basic
 	Change "Host" header 
 
-## via middleware
+## via middleware (for password reseting)
 	Add X-Forwarded-Host: <domain.com>
 	https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-poisoning-via-middleware
 	
 ## via dangling markup
 	Try "Host: domain.com" to "Host: domain.com:attacker.com"
 	https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning/lab-host-header-password-reset-poisoning-via-dangling-markup
+
+# Web Caches Poisioning
+## Via an unkeyed header
+	This lab supports the X-Forwarded-Host header. 
+	https://portswigger.net/web-security/web-cache-poisoning/exploiting-design-flaws/lab-web-cache-poisoning-with-an-unkeyed-header
 	
 # RCE
 ## Basic
