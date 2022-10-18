@@ -86,6 +86,9 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 	find savedpref crenditial using adb
 https://www.youtube.com/watch?v=x8keYIWFzbY
 
+## BACKUP FLAG TRUE ENABLED
+	go to AndroidManifest.xml and search "backup" if backup is not found or may be its true thats means its  vulnerable
+
 
 # Wifi Password Hacking
 	
