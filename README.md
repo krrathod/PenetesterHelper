@@ -79,6 +79,14 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 	add "race.py" payload
 	add "test: %s" header in header
 
+
+
+# Android Apk VAPT
+## Insecure-data-storage
+	find savedpref crenditial using adb
+https://www.youtube.com/watch?v=x8keYIWFzbY
+
+
 # Wifi Password Hacking
 	
 
