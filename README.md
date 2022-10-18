@@ -89,6 +89,13 @@ https://owasp.org/www-project-mobile-top-10/2016-risks/m2-insecure-data-storage
 
 ## BACKUP FLAG TRUE ENABLED
 	go to AndroidManifest.xml and search "backup" if backup is not found or may be its true thats means its  vulnerable
+	
+## Exploiting Apps vulnerable to Janus (CVE-2017–13156)
+A serious vulnerability in Android allows attackers to inject a DEX file into an APK file without affecting the signatures. (i.e. modify the code in applications without affecting their signatures.)
+We use apksigner tool to find the signature schemes used by the application
+	apksigner verify -verbose h5.apk
+	
+https://medium.com/mobis3c/exploiting-apps-vulnerable-to-janus-cve-2017-13156-8d52c983b4e0
 
 
 # Wifi Password Hacking
