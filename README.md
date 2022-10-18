@@ -85,6 +85,7 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 ## Insecure-data-storage
 	find savedpref crenditial using adb
 https://www.youtube.com/watch?v=x8keYIWFzbY
+https://owasp.org/www-project-mobile-top-10/2016-risks/m2-insecure-data-storage
 
 ## BACKUP FLAG TRUE ENABLED
 	go to AndroidManifest.xml and search "backup" if backup is not found or may be its true thats means its  vulnerable
