@@ -53,6 +53,7 @@ https://portswigger.net/web-security/web-cache-poisoning/exploiting-design-flaws
 	
 # RCE
 ## Basic
+	not delete @PNG
 	Upload Php File
 	
 ## via Content-Type restriction bypass
