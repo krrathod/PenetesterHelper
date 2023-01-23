@@ -117,6 +117,14 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 
 ## Direct Start
 	adb shell am start -n {package_name}/.{activity_name}
+	
+## App Manipulation
+### Sign Apk
+
+	keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+	java -jar .\apksigner.jar  sign --ks my-release-key.keystore app-debug.apk
+	
 ## Insecure-data-storage
 	find savedpref crenditial using adb
 https://www.youtube.com/watch?v=x8keYIWFzbY
