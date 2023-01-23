@@ -114,6 +114,9 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 	=@MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc.exe'!_xlbgnm.A1
 
 # Android Apk VAPT
+
+## Direct Start
+	adb shell am start -n {package_name}/.{activity_name}
 ## Insecure-data-storage
 	find savedpref crenditial using adb
 https://www.youtube.com/watch?v=x8keYIWFzbY
