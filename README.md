@@ -50,6 +50,9 @@ https://portswigger.net/web-security/web-cache-poisoning/exploiting-design-flaws
 		X-Forwarded-Scheme:http
 		X-Forwarded-Host: example.com
 https://portswigger.net/web-security/web-cache-poisoning/exploiting-design-flaws/lab-web-cache-poisoning-with-multiple-headers
+
+# CORS Payload
+	https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/CORS%20Misconfiguration/README.md
 	
 # RCE
 ## Basic
