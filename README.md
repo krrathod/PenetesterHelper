@@ -144,6 +144,29 @@ We use apksigner tool to find the signature schemes used by the application</br>
 	
 https://medium.com/mobis3c/exploiting-apps-vulnerable-to-janus-cve-2017-13156-8d52c983b4e0
 
+## Frida Setup
+### Tools
+1) Android Emulator API 32  </br>
+2) BurpSuit 
+### Install Frida in Android Emulator
+adb push frida_server /data/local/tmp  </br>
+adb push ca_cert /data/local/tmp
+
+### package Name
+frida-ps -Ua
+
+### SSL Bypass
+frida -U --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f YOUR_BINARY </br>
+Additional:  </br>
+    objection -g pakage_name explore  </br>
+    android sslpinning disable  </br>
+    
+### Root Bypass
+frida -U --codeshare dzonerzy/fridantiroot -f YOUR_BINARY </br>
+Additional:  </br>
+objection -g pakage_name explore  </br>
+android sslpinning disable  </br>
+
 
 # Wifi Password Hacking
 	
