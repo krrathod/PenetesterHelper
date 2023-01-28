@@ -144,6 +144,12 @@ We use apksigner tool to find the signature schemes used by the application</br>
 	
 https://medium.com/mobis3c/exploiting-apps-vulnerable-to-janus-cve-2017-13156-8d52c983b4e0
 
+## Sensitive Information in Application Memory (Memory Dump)
+	frida-ps -U
+	python3 fridump.py -U -s "UPCL Smart Billing"
+	
+	http://pentestcorner.com/fridump-android-examples/
+
 ## Frida Setup
 ### Tools
 1) Android Emulator API 32  </br>
