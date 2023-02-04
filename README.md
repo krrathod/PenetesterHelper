@@ -23,6 +23,11 @@ or
 		  <iframe src="{url}" frameborder="0"></iframe>
 		</body>
 		</html>
+		
+# Weak SSL Ciphers
+V1.0 & V1.1 is vulnerable
+
+	nmap -Pn --script ssl-enum-ciphers {domain} -p {port}
 
 # Host Header Poisoning
 ## Basic
