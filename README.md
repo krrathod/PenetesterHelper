@@ -173,6 +173,12 @@ https://medium.com/mobis3c/exploiting-apps-vulnerable-to-janus-cve-2017-13156-8d
 adb push frida_server /data/local/tmp  </br>
 adb push ca_cert /data/local/tmp
 
+### Install Frida in Windows or Linux
+
+	pip3 install frida-tools
+	
+	pip3 install objection frida-tools
+
 ### package Name
 frida-ps -Ua
 
