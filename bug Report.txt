@@ -1,0 +1,10 @@
+Subject: Security Vulnerabilities Found on Website
+
+Dear [name],
+
+I recently visited your website and noticed a bug while I was navigating through the pages. I am writing to notify you that I have identified several security vulnerabilities on your website. Specifically, I discovered an [Vulnerability_Name] These are serious issues which could potentially lead to a data breach or other malicious activities if left unaddressed. As such it is important that these issues be addressed as soon as possible in order to protect your website from potential threats. Please let me know how you would like me to proceed with providing additional information about these findings so we can work together towards resolving them quickly and efficiently for the safety of your customers’ data and other sensitive information stored within the system.  
+
+POC: [POC]
+
+Sincerely
+[Your Name]
